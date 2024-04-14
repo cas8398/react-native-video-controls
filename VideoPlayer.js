@@ -480,6 +480,20 @@ export default class VideoPlayer extends Component {
    * the <Video> component then updates the
    * isFullscreen state.
    */
+
+  
+  //REVIEW - Callback url
+  whereUri(){
+    return this.props.source.uri;
+  }
+
+  //REVIEW - CallBack fullscreen 
+  isCurrentlyFullscreen(){ 
+    let state = this.state; 
+    const isFullScreen = state.isFullscreen;
+    return isFullScreen;
+  }
+ 
   _toggleFullscreen() {
     let state = this.state;
 
